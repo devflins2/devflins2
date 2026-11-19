@@ -218,15 +218,11 @@ Have questions about **Anyfy**, real-time audio architectures, or potential coll
   <a href="https://github.com/devflins2">
     <img src="https://img.shields.io/badge/GitHub-Profile-080C14?style=for-the-badge&logo=github&logoColor=00F2FE" alt="GitHub" />
   </a>
+  <a href="https://github.com/devflins2/anyfy">
+    <img src="https://img.shields.io/badge/Anyfy-Repository-080C14?style=for-the-badge&logo=android&logoColor=00F2FE" alt="Anyfy Repository" />
+  </a>
   <a href="https://github.com/devflins2/anyfy/issues">
     <img src="https://img.shields.io/badge/Anyfy-Issues%20&%20Discussions-080C14?style=for-the-badge&logo=github&logoColor=38BDF8" alt="Anyfy Discussions" />
-  </a>
-  <!-- Placeholder Social Buttons - Replace # with your real handles -->
-  <a href="https://twitter.com/">
-    <img src="https://img.shields.io/badge/X%20%2F%20Twitter-080C14?style=for-the-badge&logo=x&logoColor=00F2FE" alt="Twitter" />
-  </a>
-  <a href="https://discord.com/">
-    <img src="https://img.shields.io/badge/Discord-080C14?style=for-the-badge&logo=discord&logoColor=38BDF8" alt="Discord" />
   </a>
 
 </div>
