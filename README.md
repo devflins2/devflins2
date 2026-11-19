@@ -5,19 +5,21 @@
 
   <br/><br/>
 
-  <!-- Status & Quick Badges -->
-  <a href="https://github.com/devflins2">
-    <img src="https://img.shields.io/badge/IDENTITY-DEVFLINS2-080C14?style=for-the-badge&logo=github&logoColor=00F2FE&labelColor=080C14" alt="Identity" />
-  </a>
-  <a href="https://github.com/devflins2/anyfy">
-    <img src="https://img.shields.io/badge/FLAGSHIP-ANYFY%20v1.0.0-080C14?style=for-the-badge&logo=android&logoColor=00F2FE&labelColor=080C14" alt="Flagship Anyfy" />
-  </a>
-  <a href="#-technology-stack">
-    <img src="https://img.shields.io/badge/FOCUS-ANDROID%20%7C%20MEDIA3%20%7C%20WEBSOCKETS-080C14?style=for-the-badge&logo=kotlin&logoColor=38BDF8&labelColor=080C14" alt="Core Focus" />
-  </a>
+  <!-- Subtle Navigation & Status Badges -->
+  <p align="center">
+    <a href="https://github.com/devflins2">
+      <img src="https://img.shields.io/badge/DEVFLINS-0B0F17?style=flat-square&logo=github&logoColor=38BDF8" alt="GitHub" />
+    </a>
+    <a href="https://github.com/devflins2/anyfy">
+      <img src="https://img.shields.io/badge/Anyfy-v1.0.0-0B0F17?style=flat-square&logo=android&logoColor=38BDF8" alt="Anyfy" />
+    </a>
+    <a href="#-technology-stack">
+      <img src="https://img.shields.io/badge/Android%20%7C%20Media3%20%7C%20WebSockets-0B0F17?style=flat-square&logo=kotlin&logoColor=38BDF8" alt="Focus" />
+    </a>
+  </p>
 
   <p align="center">
-    <b>Architecting high-performance Android media applications, low-latency audio pipelines, and open-source tooling.</b>
+    <b>Android &amp; Distributed Systems Developer</b> • Building performant mobile media architectures and real-time audio systems.
   </p>
 
 </div>
@@ -28,12 +30,12 @@
 
 ## ⚡ About Me
 
-I am a passionate software engineer focused on building clean, performant, and privacy-respecting client applications and distributed backend services. My primary domain is the **Android ecosystem**, specializing in modern declarative UI (**Jetpack Compose**), media playback engines (**AndroidX Media3 / ExoPlayer**), and real-time synchronized networking.
+I build high-performance client applications and real-time network services, focusing primarily on the **Android ecosystem**. My work centers around low-latency media playback engines (**AndroidX Media3 / ExoPlayer**), modern declarative UI (**Jetpack Compose**), and real-time audio synchronization over WebSockets.
 
-- 📱 **Core Focus:** Native Android engineering with 100% Kotlin, Jetpack Compose (Material 3), and reactive architectures.
-- 🎵 **Media Engineering:** Audio stream resolution, ExoPlayer pipeline management, and background media sessions without external proxy dependencies.
-- 🌐 **Real-Time Systems:** Lightweight Node.js and WebSocket microservices for synchronized multi-user audio listening rooms.
-- 🛠️ **Engineering Mindset:** Pragmatic, privacy-first design, strictly decoupled architecture, and zero unnecessary bloat.
+- 📱 **Android & Compose:** Designing clean, modular Android architectures with 100% Kotlin, Jetpack Compose (Material 3), and unidirectional data flow.
+- 🎵 **Audio & Media Pipelines:** Direct audio stream resolution, custom ExoPlayer pipelines, and background playback coordination without third-party proxy dependencies.
+- 🌐 **Distributed & Real-Time Systems:** Lightweight Node.js and WebSocket backends supporting synchronized multi-client listening rooms.
+- 🛠️ **Engineering Principles:** Offline-first caching, strictly decoupled layers, and zero unnecessary bloat.
 
 <p align="center">
   <img src="assets/section-divider.svg" alt="Divider" width="100%" />
@@ -47,74 +49,53 @@ I am a passionate software engineer focused on building clean, performant, and p
 
   <p>
     <a href="https://github.com/devflins2/anyfy/releases/latest">
-      <img src="https://img.shields.io/github/v/release/devflins2/anyfy?style=for-the-badge&color=00F2FE&label=Release&labelColor=080C14" alt="Latest Release" />
+      <img src="https://img.shields.io/badge/Release-v1.0.0-0B0F17?style=flat-square&logo=github&logoColor=38BDF8" alt="Latest Release" />
     </a>
     <a href="https://github.com/devflins2/anyfy">
-      <img src="https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%E2%80%9336)-080C14?style=for-the-badge&logo=android&logoColor=00F2FE&labelColor=080C14" alt="Android Platform" />
+      <img src="https://img.shields.io/badge/Platform-Android%208.0%2B%20(API%2026%E2%80%9336)-0B0F17?style=flat-square&logo=android&logoColor=38BDF8" alt="Platform" />
     </a>
     <a href="https://github.com/devflins2/anyfy">
-      <img src="https://img.shields.io/badge/Language-Kotlin%202.0%2B-080C14?style=for-the-badge&logo=kotlin&logoColor=00F2FE&labelColor=080C14" alt="Kotlin" />
+      <img src="https://img.shields.io/badge/Language-Kotlin%202.0%2B-0B0F17?style=flat-square&logo=kotlin&logoColor=38BDF8" alt="Kotlin" />
     </a>
     <a href="https://github.com/devflins2/anyfy">
-      <img src="https://img.shields.io/badge/Audio%20Engine-AndroidX%20Media3-080C14?style=for-the-badge&logo=google&logoColor=38BDF8&labelColor=080C14" alt="Media3" />
+      <img src="https://img.shields.io/badge/Audio%20Core-AndroidX%20Media3-0B0F17?style=flat-square&logo=google&logoColor=38BDF8" alt="Media3" />
     </a>
   </p>
 </div>
 
-| Capability | Engineering Architecture |
+| Layer | Architecture & Capabilities |
 | :--- | :--- |
-| **Stream Extraction** | On-device audio stream resolution using native stream cipher solvers — eliminates 3rd party audio proxies. |
-| **UI & UX** | Modern monochrome interface built entirely with **Jetpack Compose**, Material 3 design tokens, and Coil Compose. |
-| **Audio Core** | **AndroidX Media3 (ExoPlayer 1.4+)** foreground service with lockscreen controls, notification actions, and audio focus management. |
+| **Stream Extraction** | On-device audio stream resolution using native stream cipher solvers — eliminates third-party audio proxies. |
+| **UI & UX** | Monochrome grey interface built with **Jetpack Compose**, Material 3 design tokens, and Coil Compose. |
+| **Audio Core** | **AndroidX Media3 (ExoPlayer 1.4+)** foreground service with lockscreen controls, notification actions, and audio focus handling. |
 | **Realtime Sync** | Synchronized multi-user listening sessions ("Together Listening") coordinated via WebSocket / Socket.IO. |
 | **Data Persistence** | Offline-first caching with **Room DB (SQLite)** and Jetpack DataStore preferences. |
 | **Release Pipeline** | Production signed APK with automated in-app updater and SHA-256 cryptographic signature verification. |
 
-> 🔗 **Explore Project:** [Repository](https://github.com/devflins2/anyfy) • [Download Release APK](https://github.com/devflins2/anyfy/releases/latest) • [Report Issue](https://github.com/devflins2/anyfy/issues)
+> 🔗 **Explore Anyfy:** [View Repository](https://github.com/devflins2/anyfy) • [Download Release APK](https://github.com/devflins2/anyfy/releases/latest) • [Report an Issue](https://github.com/devflins2/anyfy/issues)
 
 <p align="center">
   <img src="assets/section-divider.svg" alt="Divider" width="100%" />
 </p>
 
-## 🚀 Public Projects & Repositories
+## 🚀 Public Repositories
 
-All projects listed below are verified public repositories maintained by **devflins2**:
+Verified open-source projects authored and maintained by **devflins2**:
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/devflins2/socketformusic">socketformusic</a></h3>
-      <p><b>Real-Time Audio Session WebSocket Server</b></p>
-      <p>Lightweight Node.js backend providing WebSocket room synchronization and state broadcast for real-time synchronized group listening rooms.</p>
-      <img src="https://img.shields.io/badge/Node.js-080C14?style=flat-square&logo=nodedotjs&logoColor=00F2FE" alt="Node.js" />
-      <img src="https://img.shields.io/badge/Socket.IO-080C14?style=flat-square&logo=socketdotio&logoColor=38BDF8" alt="Socket.io" />
-      <img src="https://img.shields.io/badge/JavaScript-080C14?style=flat-square&logo=javascript&logoColor=F7DF1E" alt="JS" />
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/devflins2/animenewspost">animenewspost</a></h3>
-      <p><b>Automated Content Pipeline &amp; Curator</b></p>
-      <p>Automated backend worker script for monitoring, parsing, and publishing structured anime news updates to distribution channels.</p>
-      <img src="https://img.shields.io/badge/Python-080C14?style=flat-square&logo=python&logoColor=00F2FE" alt="Python" />
-      <img src="https://img.shields.io/badge/Automation-080C14?style=flat-square&logo=githubactions&logoColor=38BDF8" alt="Automation" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/devflins2/animeapinews">animeapinews</a></h3>
-      <p><b>News Feed API Service</b></p>
-      <p>RESTful microservice designed to serve structured anime news and release metadata in clean JSON endpoints.</p>
-      <img src="https://img.shields.io/badge/JavaScript-080C14?style=flat-square&logo=javascript&logoColor=00F2FE" alt="JavaScript" />
-      <img src="https://img.shields.io/badge/REST_API-080C14?style=flat-square&logo=fastapi&logoColor=38BDF8" alt="REST" />
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/devflins2/user-to-number-">user-to-number-</a></h3>
-      <p><b>Data Transformation Utility</b></p>
-      <p>Lightweight utility library for identifier mapping, string normalization, and data processing routines.</p>
-      <img src="https://img.shields.io/badge/Python-080C14?style=flat-square&logo=python&logoColor=00F2FE" alt="Python" />
-      <img src="https://img.shields.io/badge/Utility-080C14?style=flat-square&logo=gnu&logoColor=38BDF8" alt="Utility" />
-    </td>
-  </tr>
-</table>
+- **[Anyfy](https://github.com/devflins2/anyfy)** — Modern Android client for streaming YouTube Music with on-device stream extraction and synchronized listening rooms.  
+  `Kotlin` `Jetpack Compose` `AndroidX Media3` `Room DB` `Socket.IO`
+
+- **[socketformusic](https://github.com/devflins2/socketformusic)** — Real-time WebSocket synchronization server powering multi-client synchronized listening sessions for Anyfy.  
+  `Node.js` `Socket.IO` `JavaScript` `WebSockets`
+
+- **[animenewspost](https://github.com/devflins2/animenewspost)** — Automated ingestion worker for monitoring, parsing, and publishing structured anime news updates.  
+  `Python` `Automation`
+
+- **[animeapinews](https://github.com/devflins2/animeapinews)** — RESTful microservice providing structured news and release metadata in clean JSON endpoints.  
+  `JavaScript` `Node.js` `REST API`
+
+- **[user-to-number-](https://github.com/devflins2/user-to-number-)** — Lightweight data transformation and mapping utility.  
+  `Python` `Data Processing`
 
 <p align="center">
   <img src="assets/section-divider.svg" alt="Divider" width="100%" />
@@ -122,42 +103,34 @@ All projects listed below are verified public repositories maintained by **devfl
 
 ## 🛠️ Technology Stack
 
-Verified technologies actively utilized across public repositories:
+Technologies actively utilized across public repositories:
 
-### 📱 Android & Mobile Engineering
+#### Android & Mobile Engineering
 <p>
-  <img src="https://img.shields.io/badge/Kotlin-080C14?style=for-the-badge&logo=kotlin&logoColor=00F2FE" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/Jetpack_Compose-080C14?style=for-the-badge&logo=jetpackcompose&logoColor=00F2FE" alt="Jetpack Compose" />
-  <img src="https://img.shields.io/badge/AndroidX_Media3-080C14?style=for-the-badge&logo=android&logoColor=38BDF8" alt="AndroidX Media3" />
-  <img src="https://img.shields.io/badge/Room_DB-080C14?style=for-the-badge&logo=sqlite&logoColor=00F2FE" alt="Room DB" />
-  <img src="https://img.shields.io/badge/Retrofit_2-080C14?style=for-the-badge&logo=square&logoColor=38BDF8" alt="Retrofit" />
-  <img src="https://img.shields.io/badge/Coroutines_&_Flow-080C14?style=for-the-badge&logo=kotlin&logoColor=00F2FE" alt="Coroutines" />
+  <img src="https://img.shields.io/badge/Kotlin-0B0F17?style=flat-square&logo=kotlin&logoColor=38BDF8" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Jetpack_Compose-0B0F17?style=flat-square&logo=jetpackcompose&logoColor=38BDF8" alt="Compose" />
+  <img src="https://img.shields.io/badge/AndroidX_Media3-0B0F17?style=flat-square&logo=android&logoColor=38BDF8" alt="Media3" />
+  <img src="https://img.shields.io/badge/Room_DB-0B0F17?style=flat-square&logo=sqlite&logoColor=38BDF8" alt="Room" />
+  <img src="https://img.shields.io/badge/Retrofit_2-0B0F17?style=flat-square&logo=square&logoColor=38BDF8" alt="Retrofit" />
+  <img src="https://img.shields.io/badge/Coroutines_&_Flow-0B0F17?style=flat-square&logo=kotlin&logoColor=38BDF8" alt="Coroutines" />
 </p>
 
-### 🌐 Backend & Distributed Networking
+#### Backend & Real-Time Networking
 <p>
-  <img src="https://img.shields.io/badge/Node.js-080C14?style=for-the-badge&logo=nodedotjs&logoColor=00F2FE" alt="Node.js" />
-  <img src="https://img.shields.io/badge/Socket.IO-080C14?style=for-the-badge&logo=socketdotio&logoColor=38BDF8" alt="Socket.IO" />
-  <img src="https://img.shields.io/badge/WebSockets-080C14?style=for-the-badge&logo=fastapi&logoColor=00F2FE" alt="WebSockets" />
-  <img src="https://img.shields.io/badge/REST_APIs-080C14?style=for-the-badge&logo=postman&logoColor=38BDF8" alt="REST APIs" />
+  <img src="https://img.shields.io/badge/Node.js-0B0F17?style=flat-square&logo=nodedotjs&logoColor=38BDF8" alt="Node" />
+  <img src="https://img.shields.io/badge/Socket.IO-0B0F17?style=flat-square&logo=socketdotio&logoColor=38BDF8" alt="Socket.IO" />
+  <img src="https://img.shields.io/badge/WebSockets-0B0F17?style=flat-square&logo=fastapi&logoColor=38BDF8" alt="WebSockets" />
+  <img src="https://img.shields.io/badge/REST_APIs-0B0F17?style=flat-square&logo=postman&logoColor=38BDF8" alt="REST" />
 </p>
 
-### 💻 Programming Languages
+#### Languages & Build Tooling
 <p>
-  <img src="https://img.shields.io/badge/Kotlin-080C14?style=for-the-badge&logo=kotlin&logoColor=00F2FE" alt="Kotlin" />
-  <img src="https://img.shields.io/badge/Python-080C14?style=for-the-badge&logo=python&logoColor=38BDF8" alt="Python" />
-  <img src="https://img.shields.io/badge/JavaScript_(ES6+)-080C14?style=for-the-badge&logo=javascript&logoColor=00F2FE" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/PowerShell-080C14?style=for-the-badge&logo=powershell&logoColor=38BDF8" alt="PowerShell" />
-  <img src="https://img.shields.io/badge/Bash-080C14?style=for-the-badge&logo=gnubash&logoColor=00F2FE" alt="Bash" />
-</p>
-
-### ⚙️ Build, Tooling & Workflow
-<p>
-  <img src="https://img.shields.io/badge/Android_Studio-080C14?style=for-the-badge&logo=androidstudio&logoColor=00F2FE" alt="Android Studio" />
-  <img src="https://img.shields.io/badge/Gradle_Kotlin_DSL-080C14?style=for-the-badge&logo=gradle&logoColor=38BDF8" alt="Gradle" />
-  <img src="https://img.shields.io/badge/Git-080C14?style=for-the-badge&logo=git&logoColor=00F2FE" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub-080C14?style=for-the-badge&logo=github&logoColor=38BDF8" alt="GitHub" />
-  <img src="https://img.shields.io/badge/Linux-080C14?style=for-the-badge&logo=linux&logoColor=00F2FE" alt="Linux" />
+  <img src="https://img.shields.io/badge/Kotlin-0B0F17?style=flat-square&logo=kotlin&logoColor=38BDF8" alt="Kotlin" />
+  <img src="https://img.shields.io/badge/Python-0B0F17?style=flat-square&logo=python&logoColor=38BDF8" alt="Python" />
+  <img src="https://img.shields.io/badge/JavaScript_(ES6+)-0B0F17?style=flat-square&logo=javascript&logoColor=38BDF8" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Gradle_Kotlin_DSL-0B0F17?style=flat-square&logo=gradle&logoColor=38BDF8" alt="Gradle" />
+  <img src="https://img.shields.io/badge/Android_Studio-0B0F17?style=flat-square&logo=androidstudio&logoColor=38BDF8" alt="Android Studio" />
+  <img src="https://img.shields.io/badge/Git-0B0F17?style=flat-square&logo=git&logoColor=38BDF8" alt="Git" />
 </p>
 
 <p align="center">
@@ -170,24 +143,24 @@ Verified technologies actively utilized across public repositories:
 
   <!-- Stats Card & Most Used Languages -->
   <a href="https://github.com/devflins2">
-    <img src="https://github-readme-stats.vercel.app/api?username=devflins2&show_icons=true&bg_color=080c14&title_color=00f2fe&text_color=94a3b8&icon_color=38bdf8&border_color=1e293b&hide_border=false&border_radius=8" alt="devflins2's GitHub Stats" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api?username=devflins2&show_icons=true&bg_color=0b0f17&title_color=38bdf8&text_color=94a3b8&icon_color=38bdf8&border_color=1e293b&hide_border=false&border_radius=6" alt="devflins2's GitHub Stats" width="49%" />
   </a>
   <a href="https://github.com/devflins2">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devflins2&layout=compact&bg_color=080c14&title_color=00f2fe&text_color=94a3b8&border_color=1e293b&hide_border=false&border_radius=8" alt="Top Languages" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devflins2&layout=compact&bg_color=0b0f17&title_color=38bdf8&text_color=94a3b8&border_color=1e293b&hide_border=false&border_radius=6" alt="Top Languages" width="49%" />
   </a>
 
   <br/><br/>
 
   <!-- Contribution Streak -->
   <a href="https://github.com/devflins2">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=devflins2&background=080c14&ring=00f2fe&fire=00e5ff&currStreakLabel=00f2fe&currStreakNum=ffffff&sideLabels=94a3b8&sideNums=ffffff&dates=64748b&border=1e293b&stroke=1e293b&border_radius=8" alt="devflins2's Streak Stats" width="98%" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=devflins2&background=0b0f17&ring=38bdf8&fire=00e5ff&currStreakLabel=38bdf8&currStreakNum=f8fafc&sideLabels=94a3b8&sideNums=f8fafc&dates=64748b&border=1e293b&stroke=1e293b&border_radius=6" alt="devflins2's Streak Stats" width="98%" />
   </a>
 
   <br/><br/>
 
   <!-- Contribution Activity Graph -->
   <a href="https://github.com/devflins2">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=devflins2&bg_color=080c14&color=00f2fe&line=00f2fe&point=38bdf8&area=true&hide_border=false&border_color=1e293b&radius=8" alt="Contribution Graph" width="98%" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=devflins2&bg_color=0b0f17&color=38bdf8&line=38bdf8&point=00f2fe&area=true&hide_border=false&border_color=1e293b&radius=6" alt="Contribution Graph" width="98%" />
   </a>
 
 </div>
@@ -216,13 +189,13 @@ Have questions about **Anyfy**, real-time audio architectures, or potential coll
 <div align="center">
 
   <a href="https://github.com/devflins2">
-    <img src="https://img.shields.io/badge/GitHub-Profile-080C14?style=for-the-badge&logo=github&logoColor=00F2FE" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-Profile-0B0F17?style=flat-square&logo=github&logoColor=38BDF8" alt="GitHub" />
   </a>
   <a href="https://github.com/devflins2/anyfy">
-    <img src="https://img.shields.io/badge/Anyfy-Repository-080C14?style=for-the-badge&logo=android&logoColor=00F2FE" alt="Anyfy Repository" />
+    <img src="https://img.shields.io/badge/Anyfy-Repository-0B0F17?style=flat-square&logo=android&logoColor=38BDF8" alt="Anyfy Repository" />
   </a>
   <a href="https://github.com/devflins2/anyfy/issues">
-    <img src="https://img.shields.io/badge/Anyfy-Issues%20&%20Discussions-080C14?style=for-the-badge&logo=github&logoColor=38BDF8" alt="Anyfy Discussions" />
+    <img src="https://img.shields.io/badge/Anyfy-Issues%20&%20Discussions-0B0F17?style=flat-square&logo=github&logoColor=38BDF8" alt="Anyfy Discussions" />
   </a>
 
 </div>
@@ -230,5 +203,5 @@ Have questions about **Anyfy**, real-time audio architectures, or potential coll
 <br/>
 
 <div align="center">
-  <sub>Designed &amp; engineered with precision for <b>DEVFLINS2</b> • Dark Charcoal &amp; Electric Cyan Visual Identity</sub>
+  <sub>Designed &amp; engineered for <b>DEVFLINS</b> • Deep Charcoal &amp; Steel-Cyan Minimal Aesthetic</sub>
 </div>

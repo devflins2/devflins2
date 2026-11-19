@@ -1,177 +1,109 @@
-<svg width="100%" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="100%" height="200" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
+    <!-- Background Canvas Gradient -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#080C14" />
-      <stop offset="50%" stop-color="#0B111E" />
-      <stop offset="100%" stop-color="#060910" />
+      <stop offset="0%" stop-color="#0B0F17" />
+      <stop offset="60%" stop-color="#0E131F" />
+      <stop offset="100%" stop-color="#080C14" />
     </linearGradient>
 
-    <!-- Electric Cyan Accent Gradient -->
-    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00F2FE" />
-      <stop offset="50%" stop-color="#38BDF8" />
-      <stop offset="100%" stop-color="#4FACFE" />
-    </linearGradient>
-
-    <!-- Text Glow Gradient -->
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="40%" stop-color="#E2F1FF" />
+    <!-- Refined Steel-Cyan Accent Gradient -->
+    <linearGradient id="steelCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
       <stop offset="100%" stop-color="#00F2FE" />
     </linearGradient>
 
-    <!-- Subtle Grid Pattern -->
-    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.7" stroke-opacity="0.35" />
+    <!-- Soft Ambient Highlights -->
+    <radialGradient id="ambientGlow" cx="80%" cy="25%" r="60%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.10" />
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#0B0F17" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Subtle Grid Mesh -->
+    <pattern id="subtleGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.25" />
     </pattern>
-
-    <!-- Radial Cyan Glow -->
-    <radialGradient id="glowPulse" cx="85%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#00F2FE" stop-opacity="0.22" />
-      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.08" />
-      <stop offset="100%" stop-color="#080C14" stop-opacity="0" />
-    </radialGradient>
-
-    <radialGradient id="leftGlow" cx="10%" cy="85%" r="45%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.14" />
-      <stop offset="100%" stop-color="#080C14" stop-opacity="0" />
-    </radialGradient>
-
-    <!-- Filter for Glow -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
   </defs>
 
   <style>
-    .title {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      font-weight: 900;
-      font-size: 42px;
-      letter-spacing: 5px;
-      fill: url(#textGrad);
+    .brand-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+      font-weight: 750;
+      font-size: 34px;
+      letter-spacing: 6px;
+      fill: #F8FAFC;
     }
-    .badge-text {
-      font-family: 'SF Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
-      font-size: 11px;
+    .brand-role {
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
       font-weight: 600;
-      letter-spacing: 1.5px;
-      fill: #00F2FE;
-    }
-    .tagline {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: 3px;
+      font-size: 13px;
+      letter-spacing: 2px;
       text-transform: uppercase;
       fill: #38BDF8;
     }
-    .description {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 13px;
+    .brand-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
       font-weight: 400;
+      font-size: 13px;
+      line-height: 1.5;
       fill: #94A3B8;
-      letter-spacing: 0.3px;
     }
-    .pill-text {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      font-size: 11.5px;
+    .tech-item {
+      font-family: 'SF Mono', Monaco, Consolas, 'Liberation Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      fill: #64748B;
+    }
+    .tech-highlight {
+      fill: #38BDF8;
       font-weight: 600;
-      fill: #E2E8F0;
     }
   </style>
 
-  <!-- Canvas Background -->
-  <rect width="900" height="240" rx="14" fill="url(#bgGrad)" />
+  <!-- Base Canvas -->
+  <rect width="900" height="200" rx="10" fill="url(#bgGrad)" />
+  <rect width="900" height="200" rx="10" fill="url(#ambientGlow)" />
+  <rect width="900" height="200" rx="10" fill="url(#subtleGrid)" />
 
-  <!-- Glow Overlays -->
-  <rect width="900" height="240" rx="14" fill="url(#glowPulse)" />
-  <rect width="900" height="240" rx="14" fill="url(#leftGlow)" />
+  <!-- Hairline Frame Border with Muted Top Cyan Stroke -->
+  <rect x="0.5" y="0.5" width="899" height="199" rx="9.5" fill="none" stroke="#1E293B" stroke-width="1" />
+  <line x1="48" y1="0.5" x2="240" y2="0.5" stroke="url(#steelCyan)" stroke-width="1.5" stroke-opacity="0.8" />
 
-  <!-- Grid Pattern Overlay -->
-  <rect width="900" height="240" rx="14" fill="url(#gridPattern)" />
-
-  <!-- Sleek Outer Border -->
-  <rect x="1" y="1" width="898" height="238" rx="13" fill="none" stroke="#1E293B" stroke-width="1.2" />
-  <rect x="1" y="1" width="898" height="238" rx="13" fill="none" stroke="url(#cyanGrad)" stroke-width="1.2" stroke-opacity="0.35" />
-
-  <!-- Tech Accent Lines -->
-  <line x1="50" y1="1" x2="220" y2="1" stroke="#00F2FE" stroke-width="2.5" />
-  <circle cx="220" cy="1" r="3" fill="#00F2FE" filter="url(#glow)" />
-
-  <line x1="720" y1="239" x2="850" y2="239" stroke="#38BDF8" stroke-width="2" />
-  <circle cx="720" cy="239" r="2.5" fill="#38BDF8" />
-
-  <!-- Top Right Terminal Status Badge -->
-  <g transform="translate(685, 26)">
-    <rect width="165" height="28" rx="14" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
-    <circle cx="16" cy="14" r="4.5" fill="#10B981" />
-    <circle cx="16" cy="14" r="7" fill="#10B981" fill-opacity="0.2" />
-    <text x="30" y="18" class="badge-text">STATUS: ACTIVE</text>
+  <!-- Monogram Logo Icon (Refined Minimal Geometric DF) -->
+  <g transform="translate(48, 38)">
+    <!-- Outer Hex Shield Frame -->
+    <polygon points="26,2 50,16 50,44 26,58 2,44 2,16" 
+             fill="#0E1626" stroke="#1E293B" stroke-width="1.5" />
+    <polygon points="26,6 46,18 46,42 26,54 6,42 6,18" 
+             fill="#080C14" stroke="url(#steelCyan)" stroke-width="1" stroke-opacity="0.7" />
+    <!-- Sharp Modern Monogram Glyph -->
+    <path d="M 18 20 L 30 20 C 34 20 37 23 37 27 C 37 31 34 34 30 34 L 22 34 L 22 40 L 18 40 Z M 22 24 L 22 30 L 29 30 C 31 30 32.5 29 32.5 27 C 32.5 25 31 24 29 24 Z" 
+          fill="url(#steelCyan)" />
   </g>
 
-  <!-- Main Identity Content -->
-  <!-- Monogram Logo Mark -->
-  <g transform="translate(52, 42)">
-    <polygon points="32,2 62,18 62,54 32,70 2,54 2,18" fill="#0C1322" stroke="url(#cyanGrad)" stroke-width="2" />
-    <polygon points="32,8 54,21 54,51 32,64 10,51 10,21" fill="#060910" stroke="#1E293B" stroke-width="1" />
-    <!-- DF Neon Glyph -->
-    <path d="M 23 24 L 37 24 C 42 24 45 27 45 32 C 45 37 42 40 37 40 L 29 40 L 29 48 L 23 48 Z M 29 29 L 29 35 L 36 35 C 38 35 40 34 40 32 C 40 30 38 29 36 29 Z" fill="url(#cyanGrad)" filter="url(#glow)" />
+  <!-- Typography Hierarchy -->
+  <text x="116" y="62" class="brand-title">DEVFLINS</text>
+  <text x="116" y="84" class="brand-role">Android &amp; Distributed Systems Developer</text>
+
+  <!-- Descriptive Subtitle -->
+  <text x="48" y="124" class="brand-desc">Architecting <tspan fill="#F1F5F9" font-weight="600">Anyfy</tspan> — open-source, privacy-first Android music streaming with Jetpack Compose &amp; ExoPlayer.</text>
+  <text x="48" y="144" class="brand-desc">Focused on on-device audio stream resolution, foreground media engines, and real-time WebSocket sync.</text>
+
+  <!-- Bottom Minimal Tech Rule -->
+  <line x1="48" y1="166" x2="852" y2="166" stroke="#1E293B" stroke-width="0.8" stroke-dasharray="2 4" />
+
+  <!-- Compact Tech Tags -->
+  <g transform="translate(48, 184)">
+    <text class="tech-item">
+      <tspan class="tech-highlight">Kotlin</tspan> • 
+      <tspan class="tech-highlight">Jetpack Compose</tspan> • 
+      <tspan class="tech-highlight">AndroidX Media3</tspan> • 
+      <tspan>Room DB</tspan> • 
+      <tspan>Node.js</tspan> • 
+      <tspan>Socket.IO</tspan> • 
+      <tspan>Python</tspan>
+    </text>
   </g>
-
-  <!-- Title & Handle -->
-  <text x="135" y="78" class="title">DEVFLINS</text>
-  <text x="135" y="102" class="tagline">Android &amp; Distributed Systems Developer</text>
-
-  <!-- Bio & Core Focus -->
-  <text x="52" y="142" class="description">Architecting high-performance Android media engines, real-time audio rooms &amp; reactive backends.</text>
-  <text x="52" y="162" class="description">Creator of <tspan fill="#00F2FE" font-weight="600">Anyfy</tspan> — privacy-respecting YouTube Music streaming client with Jetpack Compose &amp; ExoPlayer.</text>
-
-  <!-- Verified Tech Pills Row -->
-  <g transform="translate(52, 184)">
-    <!-- Pill 1: Anyfy Flagship -->
-    <g transform="translate(0, 0)">
-      <rect width="158" height="26" rx="6" fill="#0C1E38" stroke="#00F2FE" stroke-width="1" />
-      <circle cx="12" cy="13" r="3.5" fill="#00F2FE" />
-      <text x="23" y="17" class="pill-text" fill="#00F2FE">⭐ Creator of Anyfy</text>
-    </g>
-
-    <!-- Pill 2: Kotlin -->
-    <g transform="translate(168, 0)">
-      <rect width="80" height="26" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
-      <text x="14" y="17" class="pill-text">Kotlin</text>
-    </g>
-
-    <!-- Pill 3: Android / Jetpack Compose -->
-    <g transform="translate(258, 0)">
-      <rect width="144" height="26" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
-      <text x="14" y="17" class="pill-text">Jetpack Compose</text>
-    </g>
-
-    <!-- Pill 4: Media3 / ExoPlayer -->
-    <g transform="translate(412, 0)">
-      <rect width="154" height="26" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
-      <text x="14" y="17" class="pill-text">AndroidX Media3</text>
-    </g>
-
-    <!-- Pill 5: Node.js & WebSockets -->
-    <g transform="translate(576, 0)">
-      <rect width="146" height="26" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
-      <text x="14" y="17" class="pill-text">Node / WebSockets</text>
-    </g>
-
-    <!-- Pill 6: Python -->
-    <g transform="translate(732, 0)">
-      <rect width="80" height="26" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1" />
-      <text x="14" y="17" class="pill-text">Python</text>
-    </g>
-  </g>
-
-  <!-- Decorative Corner Accents -->
-  <path d="M 12 28 L 12 12 L 28 12" fill="none" stroke="#00F2FE" stroke-width="1.8" />
-  <path d="M 888 28 L 888 12 L 872 12" fill="none" stroke="#1E293B" stroke-width="1.8" />
-  <path d="M 12 212 L 12 228 L 28 228" fill="none" stroke="#1E293B" stroke-width="1.8" />
-  <path d="M 888 212 L 888 228 L 872 228" fill="none" stroke="#38BDF8" stroke-width="1.8" />
 </svg>
